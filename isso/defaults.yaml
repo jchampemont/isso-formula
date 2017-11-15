@@ -17,7 +17,7 @@ isso:
       username: ""
       password: ""
       host: "localhost"
-      post: 25
+      port: 25
       security: "none"
       to: ""
       from: ""
