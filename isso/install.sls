@@ -1,4 +1,4 @@
-{% from 'ghost/map.jinja' import isso with context %}
+{% from 'isso/map.jinja' import isso with context %}
 
 isso.dependencies:
   pkg.installed:
