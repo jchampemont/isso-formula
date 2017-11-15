@@ -1,0 +1,2 @@
+{% import_yaml 'ghost/defaults.yaml' as default_settings %}
+{% set isso = salt['pillar.get']('isso', default=default_settings.get('isso'), merge=True) %}
