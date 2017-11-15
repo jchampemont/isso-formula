@@ -28,6 +28,8 @@ isso.dependencies:
     - group: {{ isso.user }}
     - mode: 644
     - template: jinja
+    - context:
+        isso: {{ isso }}
 
 /etc/supervisor/conf.d/isso.conf:
   file.managed:
@@ -36,6 +38,8 @@ isso.dependencies:
     - group: root
     - mode: 644
     - template: jinja
+    - context:
+        isso: {{ isso }}
 
 isso:
   supervisord.running:
