@@ -1,6 +1,8 @@
 # isso-formula
 Formula for the isso commenting server (https://posativ.org/isso/).
 
+See the full [Salt Formulas installation and usage instructions](http://docs.saltstack.com/en/latest/topics/development/conventions/formulas.html).
+
 ## Available states
 ### `isso.install`
 Installs the isso commenting server.
