@@ -4,10 +4,12 @@ isso.dependencies:
   pkg.installed:
     - pkgs:
       - supervisor
-      - python-setuptools
-      - python-virtualenv
       - build-essential
-      - python2.7-dev
+      - python3-setuptools
+      - python3-venv
+      - python3-dev
+      - python3-venv
+      - libffi-dev
 
 {{ isso.path }}:
   file.directory:
@@ -17,6 +19,7 @@ isso.dependencies:
   virtualenv.managed:
     - user: {{ isso.user }}
     - cwd: {{ isso.path }}
+    - venv_bin: /usr/bin/pyvenv
     - pip_pkgs:
       - isso
 
