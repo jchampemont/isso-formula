@@ -32,7 +32,7 @@ isso.dependencies:
     - mode: 644
     - template: jinja
     - context:
-        isso: {{ isso }}
+        isso: {{ isso|tojson }}
 
 /etc/supervisor/conf.d/isso.conf:
   file.managed:
@@ -42,7 +42,7 @@ isso.dependencies:
     - mode: 644
     - template: jinja
     - context:
-        isso: {{ isso }}
+        isso: {{ isso|tojson }}
 
 isso:
   supervisord.running:
